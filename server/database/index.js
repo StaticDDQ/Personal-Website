@@ -4,11 +4,11 @@ class Database {
     constructor() {
         this.pool = new Pool({
             port: 5432,
-            password: 'apocalymon123',
-            database: 'ddq',
+            password: 'a11c65c05aecee5172198c72f674d6ad820c4008c560e26a03479167d7fb7110',
+            database: 'de4n21afqrunnt',
             max: 10,
-            host: 'localhost',
-            user: 'postgres'
+            host: 'ec2-54-174-221-35.compute-1.amazonaws.com',
+            user: 'usjoltevzpxptz'
         });
 
         this.pool.on('error', (err, client) => {
