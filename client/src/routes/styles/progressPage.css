@@ -1,0 +1,37 @@
+﻿.updates {
+    list-style-type: none;
+    background-color: #394053;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 20px;
+}
+
+    .updates > * {
+        height: 150px;
+        width: 100%;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #4e4a59;
+        color: #f8f7e6;
+        margin-bottom: 20px;
+    }
+
+        .updates > * div {
+            display: grid;
+            grid-template-columns: 20% auto;
+            grid-column-gap: 20px;
+        }
+
+        .updates > * img {
+            object-fit: cover;
+            height: 150px;
+            width: 100%;
+        }
+
+        .updates > *:last-child {
+            margin-bottom: 0;
+        }
+
+        .updates > *:hover {
+            background-color: #6b657a;
+        }

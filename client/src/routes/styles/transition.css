@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+/*====== WIDTH ======*/
+.screenW {
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fullW {
+    width: 100%;
+}
+/*====== HEIGHT ======*/
+.screenH {
+    height: 300px;
+}
+
+.fullH {
+    height: 100%;
+}
+
+.height70 {
+    height: 70px;
+}
+/*====== BG COLOR ======*/
+.dGray {
+    background-color: #394053;
+}
+
+.white50 {
+    background-color: #ffffff80;
+}
+
+.black50 {
+    background-color: #00000080;
+}
+
+/*====== IMAGE ======*/
+.imgCover {
+    object-fit: cover;
+}
+/*====== OVERFLOW ======*/
+.overflowH {
+    overflow: hidden;
+}
+/*====== TRANSITIONS ======*/
+.transition1l {
+    transition: left 1s ease-in-out;
+}
+/*====== POSITION ======*/
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.left0 {
+    left: 0px;
+}
+
+.left100vw {
+    left: 100%;
+}
+
+.leftM100vw {
+    left: -100%;
+}
+
+.bot0 {
+    bottom: 0;
+}
+/*====== FLEX ======*/
+.df {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.fCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex8 {
+    flex: 8;
+}

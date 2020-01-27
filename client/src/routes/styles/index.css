@@ -1,0 +1,213 @@
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+h1 {
+    color: #f8f7e6;
+}
+
+h3 {
+    color: #f8f7e6;
+}
+
+input[type=image] {
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+    input[type=image]:hover {
+        opacity: 0.5;
+        transition: opacity 0.5s;
+    }
+
+.panelText {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f8f7e6;
+    width: 100%;
+    height: 30%;
+}
+
+.imageShow{
+    height: 100%;
+    overflow: hidden;
+}
+
+.panelImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: width .2s, height .2s, transform .2s;
+}
+
+    .panelImg:hover {
+        transform: scale(2);
+    }
+
+.updateFeed {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    .updateFeed > * {
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        background-color: #4e4a59;
+        margin-bottom: 5px;
+    }
+
+    .updateFeed > *:hover {
+        background-color: #6b657a;
+    }
+
+.linkFeed {
+    list-style-type: none;
+    color: #f8f7e6;
+}
+
+    .linkFeed a {
+        color: #f8f7e6;
+    }
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.ContentGrid {
+    display: grid;
+    grid-template-areas: 
+        "project project"
+        "txt update";
+    grid-template-columns: 65% auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 50px;
+    padding-top: 0;
+}
+
+#ProjectShowcaseLayout {
+    display: grid;
+    grid-template-rows: 80px 250px;
+    text-align: center;
+    background-color: #394053;
+    grid-area: project;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+}
+    #ProjectShowcaseLayout .projectImg {
+        position: relative;
+    }
+
+    #ProjectShowcaseLayout .projectDisplay {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ProjectShowcaseLayout .prevProj {
+        z-index: 10;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        left: 0;
+        top: 75px;
+    }
+
+    #ProjectShowcaseLayout .nextProj {
+        z-index: 10;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        right: 0;
+        top: 75px;
+    }
+
+    #ProjectShowcaseLayout .endTrail{
+        height: 75px;
+    }
+
+#InfoLayout {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    align-items: center;
+    padding: 40px;
+}
+
+#TextLayout {
+    background-color: #4e4a59;
+    border: 10px solid #394053;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    height: 100%;
+}
+
+    #TextLayout img {
+        float: left;
+        height: 100%;
+        width: 25%;
+        object-fit: cover;
+        display: block;
+        padding-right: 10px;
+    }
+
+    #TextLayout p {
+        white-space: pre-wrap;
+        overflow-y: auto;
+        height: 220px;
+        color: #f8f7e6;
+    }
+
+    #TextLayout h3 {
+        height: 15%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+@media screen and (max-width: 600px) {
+
+    .ContentGrid {
+        display: grid;
+        grid-template-areas: 
+            "txt" 
+            "update";
+        grid-template-columns: auto;
+        grid-row-gap: 40px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    #InfoLayout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #TextLayout {
+        background-color: #4e4a59;
+        border: 10px solid #394053;
+        box-shadow: 0 0 20px black;
+        display: grid;
+        height: 100%;
+    }
+
+        #TextLayout img {
+            float: left;
+            height: 100px;
+            width: 100%;
+            object-fit: cover;
+        }
+}

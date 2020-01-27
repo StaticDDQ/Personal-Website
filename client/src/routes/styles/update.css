@@ -1,0 +1,24 @@
+.updateTitle {
+    text-align: left;
+    color: #f8f7e6;
+    background-color: #4e4a59;
+    width: 100%;
+    height: 75px;
+    box-shadow: 0 0 20px black;
+    overflow-y: auto;
+}
+
+.updateText {
+    text-align: justify;
+    height: 300px;
+    margin-top: 50px;
+    overflow-y: auto;
+    background-color: #4e4a59;
+    box-shadow: 0 0 20px black;
+}
+
+.updateField {
+    height: 450px;
+    padding: 50px;
+    padding-top: 20px;
+}

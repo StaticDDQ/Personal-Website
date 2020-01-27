@@ -1,0 +1,21 @@
+#Background {
+    background: url('../assets/image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #034732;
+    background-blend-mode: multiply;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#ContentLayout {
+    background-color: #698f3f;
+    box-shadow: 0 0 5px black;
+    max-width: 1150px;
+    margin: 5% auto;
+    border-radius: 5px;
+}
+

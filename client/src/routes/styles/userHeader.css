@@ -1,0 +1,36 @@
+#UserHeaderLayout {
+    height: 50px;
+    display: flex;
+    background-color: #394053;
+}
+
+#UserHeaderLayout .url {
+    text-decoration: none;
+    color: #f8f7e6;
+}
+
+#UserHeaderLayout .buttonControls {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    padding-top: 10px;
+    padding-right: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+    #UserHeaderLayout .ControlButton {
+        font-size: 1em;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 100px;
+        right: 0;
+    }
+
+@media screen and (max-width: 375px) {
+
+    #UserHeaderLayout #Logo {
+        visibility: hidden;
+        position: absolute;
+    }
+}

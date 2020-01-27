@@ -1,0 +1,99 @@
+.createProject {
+    padding: 20px;
+}
+
+.createProjectForm {
+    display: grid;
+    grid-template-areas: 
+        "title title title"
+        "desc desc logo"
+        "desc desc uploadLogo" 
+        "add remove ." 
+        "upload upload upload"
+        "vid . ."
+        "submit . .";
+    grid-template-columns: 30% 35% auto;
+    grid-template-rows: 1fr auto auto 40px auto auto 40px;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+.createProjectTitle{
+    grid-area: title;
+}
+
+.uploadLogo{
+    grid-area: uploadLogo;
+}
+
+.createProjectDesc{
+    text-overflow: ellipsis;
+    grid-area: desc;
+}
+
+.add{
+    grid-area: add;
+}
+
+.remove{
+    grid-area: remove;
+}
+
+.uploadVid{
+    grid-area: vid;
+}
+
+.uploadImgs {
+    grid-area: upload;
+    height: 200px;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #4e4a59;
+}
+
+.uploadImgs li {
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    white-space: normal;
+    background-color: #6f6a7e;
+}
+
+.uploadImgs li img {
+    margin-top: 10px;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.submitProject{
+    grid-area: submit;
+}
+
+#projectLogoDisplay {
+    grid-area: logo;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+
+    .createProjectForm {
+        display: grid;
+        grid-template-areas: 
+            "title title"
+            "logo logo"
+            "uploadLogo uploadLogo" 
+            "desc desc" 
+            "add remove" 
+            "upload upload" 
+            "vid vid"
+            "submit submit";
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr auto auto auto 40px auto auto 40px;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+    }
+}

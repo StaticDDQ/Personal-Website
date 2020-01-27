@@ -1,0 +1,13 @@
+.createUpdate{
+    padding: 20px;
+}
+
+.createUpdateTitle{
+    margin-bottom: 20px;
+}
+
+.createUpdateDesc{
+    height: 200px;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+}

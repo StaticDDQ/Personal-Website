@@ -1,0 +1,93 @@
+
+#Logo {
+    font-size: 2em;
+    padding-left: 10px;
+    width: 100px;
+}
+
+#HeaderLayout {
+    height: 50px;
+    display: flex;
+    background-color: #394053;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#HeaderLayout .url {
+    text-decoration: none;
+    color: #f8f7e6;
+}
+
+    #HeaderLayout #HeaderLoginLayout {
+        display: grid;
+        grid-template-areas: "controlBtn loginBtn login";
+        grid-template-columns: auto auto minmax(0,1fr);
+        grid-column-gap: 10px;
+        text-align: center;
+        flex: 1;
+    }
+
+#LoginLayout {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr auto;
+    padding-left: 10px;
+}
+
+#HeaderLayout .ControlButton {
+    grid-area: controlBtn;
+    font-size: 1em;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#ActualLogin {
+    grid-area: login;
+}
+
+#LoginButton {
+    grid-area: loginBtn;
+}
+
+.hideLogin {
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.showLogin {
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.loginBtn {
+    height: 100%;
+}
+
+.LoginHide {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 1s;
+}
+
+.LoginShow {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    transition: opacity 1s;
+}
+
+@media screen and (max-width: 600px) {
+
+    .hideSome #Logo{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .hideSome #LoginButton {
+        visibility: hidden;
+        position: absolute;
+    }
+}
