@@ -44,14 +44,12 @@ class MainPage extends React.Component {
         fetch('/api/update/firstfive')
             .then(res => res.json())
             .then(res => {
-                console.log(res);
                 this.setState({ updates: res });
             });
 
         fetch('/api/project')
             .then(res => res.json())
             .then(res => {
-                console.log(res);
                 this.setState({ projects: res, projIndex: 0, selectProject: res[0] });
             });
     }

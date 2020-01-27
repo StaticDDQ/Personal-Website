@@ -3,7 +3,7 @@ const db = require('../database');
 class Project {
 
     static retrieveAll(callback) {
-        db.query('SELECT id,projTitle, projLogo FROM project ', function (err, res) {
+        db.query('SELECT id,projtitle, projlogo FROM project ', function (err, res) {
             if (err.error)
                 return callback(err);
             callback(res);
