@@ -22,7 +22,7 @@ app.listen(PORT, () => console.log("Listening on port " + PORT));
 if (ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
     app.use((req, res) => {
-        res.sendFile(path.join(__dirname, '../client/build/index.js'));
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
     });
 }
 
