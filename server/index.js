@@ -20,10 +20,7 @@ app.use('/api/update', require('./api/update'));
 app.listen(PORT, () => console.log("Listening on port " + PORT));
 
 if (ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-    app.use((req, res) => {
-        res.sendFile(path.join(__dirname, '../client/build/index.html'));
-    });
+ 
 }
 
 db.query('SELECT NOW()', (err, res) => {
