@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": ".",
+  "homepage": "https://github.com/StaticDDQ/Personal-Website#readme",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix client",
@@ -20,9 +20,11 @@
   ],
   "author": "ddq",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "concurrently": "^5.0.0",
-    "nodemon": "^1.19.4",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
