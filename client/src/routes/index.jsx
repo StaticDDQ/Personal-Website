@@ -105,7 +105,7 @@ class MainPage extends React.Component {
             background-size: cover;
             background-position: center;
             transition: all 0.5s ease;
-            background-image: url(${process.env.PUBLIC_URL + '/img/' + this.state.selectProject.projlogo});
+            background-image: url(${this.state.selectProject != null ? process.env.PUBLIC_URL + '/img/' + this.state.selectProject.projlogo : "*"});
 
             &:hover {
                 transform: scale(1.2);
