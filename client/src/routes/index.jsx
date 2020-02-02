@@ -150,7 +150,7 @@ class MainPage extends React.Component {
                                 </div>
 
                                 <div className="panelText">
-                                    {this.state.selectProject.projtitle}
+                                    {this.state.selectProject}
                                 </div>
                             </div>
 
