@@ -25,20 +25,21 @@ class Progress extends React.Component {
         return (
             <Structure>
                 <Transition />
-                <ul className="updates">
-                    {this.state.updates.length > 0 ? this.state.updates.map((e, index) => (
-                        <Link to={"/update/?=" + e.id}>
-                            <li key={index}>
-                                <div>
-                                    <img src={s0} alt="img" />
+                <div className="updates">
+                    <ul>
+                        {this.state.updates.length > 0 ? this.state.updates.map((e, index) => (
+                            <Link to={"/update/?=" + e.id}>
+                                <li key={index}>
+                                    <div>
+                                        <img src={s0} alt="img" />
 
-                                    <h3>{e.title}</h3>
-                                </div>
-                            </li>
-                        </Link>
-                    )) : "No Updates"}
-                </ul>
-                <div></div>
+                                        <h3>{e.title}</h3>
+                                    </div>
+                                </li>
+                            </Link>
+                        )) : "No Updates"}
+                    </ul>
+                </div>
             </Structure>
         )
     }
