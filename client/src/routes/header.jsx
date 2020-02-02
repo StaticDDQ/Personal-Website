@@ -17,6 +17,7 @@ class Header extends React.Component {
     
     useEffect = () => {
         if (!this.state.loginShown) {
+            console.log("use");
             this.setState({
                 timer: setTimeout(() => {
                     document.getElementById("login").className = "showLogin";
@@ -28,6 +29,7 @@ class Header extends React.Component {
     }
 
     resetEffect = () => {
+        console.log("reset");
         clearTimeout(this.state.timer);
     }
 
