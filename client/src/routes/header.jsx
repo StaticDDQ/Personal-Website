@@ -14,24 +14,6 @@ class Header extends React.Component {
         timer: null,
         loginPressed: false
     };
-    
-    useEffect = () => {
-        if (!this.state.loginShown) {
-            console.log("use");
-            this.setState({
-                timer: setTimeout(() => {
-                    document.getElementById("login").className = "showLogin";
-                    this.setState({ loginShown: true });
-                }, 1000)
-            });
-            return () => clearTimeout(this.state.timer);
-        }
-    }
-
-    resetEffect = () => {
-        console.log("reset");
-        clearTimeout(this.state.timer);
-    }
 
     updateUsername = (event) => {
         this.setState({ username: event.target.value });
@@ -81,9 +63,9 @@ class Header extends React.Component {
                         <Link to="/progress" className="url">Progression</Link>
                     </div>
 
-                    <div onMouseOver={!this.props.isLogged ? this.useEffect : null} onMouseOut={this.resetEffect} id="LoginButton">
-                        <div className="hideLogin" id="login">
-                            <button type="button" className="loginBtn" onClick={this.Login} disabled={!this.state.loginShown}>Login</button>
+                    <div id="LoginButton">
+                        <div className="showLogin" id="login">
+                            <button type="button" className="loginBtn" onClick={this.Login}>Admin</button>
                         </div>
                     </div>
 
