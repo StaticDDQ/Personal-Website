@@ -38,6 +38,8 @@ class Progress extends React.Component {
                         </Link>
                     )) : "No Updates"}
                 </ul>
+                <div>
+                <div/>
             </Structure>
         )
     }
