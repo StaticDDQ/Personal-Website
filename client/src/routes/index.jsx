@@ -50,7 +50,8 @@ class MainPage extends React.Component {
         fetch('/api/project')
             .then(res => res.json())
             .then(res => {
-                this.setState({ projects: res, projIndex: 0, selectProject: res[0] });
+                console.log(res);
+                this.setState({ projects: res, projIndex: 0, selectProject: (res.length > 0) ? res[0] : null});
             });
     }
 
@@ -143,14 +144,14 @@ class MainPage extends React.Component {
 
                             <div className="projectDisplay">
                                 <div className="imageShow">
-                                    <Link to={"/project/" + this.state.selectProject.id} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
+                                    <Link to={(this.state.selectProject != null) ? "/project/" + this.state.selectProject.id : "*"} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
                                         <ImageShowcase>
                                         </ImageShowcase>
                                     </Link>
                                 </div>
 
                                 <div className="panelText">
-                                    {this.state.selectProject.projtitle}
+                                    {(this.state.selectProject != null) ? this.state.selectProject.projtitle : "No Projects"}
                                 </div>
                             </div>
 

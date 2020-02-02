@@ -6,7 +6,6 @@ class Database {
             port: 5432,
             password: 'a11c65c05aecee5172198c72f674d6ad820c4008c560e26a03479167d7fb7110',
             database: 'de4n21afqrunnt',
-            max: 10,
             host: 'ec2-54-174-221-35.compute-1.amazonaws.com',
             user: 'usjoltevzpxptz'
         });
