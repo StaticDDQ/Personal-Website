@@ -104,7 +104,7 @@ class MainPage extends React.Component {
             background-size: cover;
             background-position: center;
             transition: all 0.5s ease;
-            background-image: url(${process.env.PUBLIC_URL + '/img/' + this.state.selectProject});
+            background-image: url(${process.env.PUBLIC_URL + '/img/' + this.state.selectProject.projlogo});
 
             &:hover {
                 transform: scale(1.2);
@@ -143,14 +143,14 @@ class MainPage extends React.Component {
 
                             <div className="projectDisplay">
                                 <div className="imageShow">
-                                    <Link to={"/project/" + this.state.selectProject} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
+                                    <Link to={"/project/" + this.state.selectProject.id} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
                                         <ImageShowcase>
                                         </ImageShowcase>
                                     </Link>
                                 </div>
 
                                 <div className="panelText">
-                                    {this.state.selectProject}
+                                    {this.state.selectProject.projtitle}
                                 </div>
                             </div>
 
