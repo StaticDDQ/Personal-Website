@@ -143,7 +143,7 @@ class MainPage extends React.Component {
 
                             <div className="projectDisplay">
                                 <div className="imageShow">
-                                    <Link to={"/project/" + this.state.selectProject.id} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
+                                    <Link to={"/project/" + this.state.selectProject} className={this.state.nextProject ? 'fadeIn' : 'fadeOut'}>
                                         <ImageShowcase>
                                         </ImageShowcase>
                                     </Link>
