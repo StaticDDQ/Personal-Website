@@ -26,7 +26,7 @@ class Progress extends React.Component {
             <Structure>
                 <Transition />
                 <ul className="updates">
-                    {this.state.updates.map((e, index) => (
+                    {this.state.updates.length > 0 ? this.state.updates.map((e, index) => (
                         <Link to={"/update/?=" + e.id}>
                             <li key={index}>
                                 <div>
@@ -36,7 +36,7 @@ class Progress extends React.Component {
                                 </div>
                             </li>
                         </Link>
-                    ))}
+                    )) : "No Updates"}
                 </ul>
             </Structure>
         )
